@@ -26,8 +26,8 @@ export async function load({ fetch }) {
 		const milliseconds =
 			parseInt(row.milliseconds) || parseInt((row.message.match(/(\d+)ms/) || [])[1]) || null;
 		return {
-			timestamp: parseDateDMY(row.timestamp), // Parse timestamp correctly as day/month/year
-			milliseconds, // Use extracted milliseconds
+			Time: parseDateDMY(row.timestamp), // Parse timestamp correctly as day/month/year
+			Milliseconds: milliseconds, // Use extracted milliseconds
 			authenticated: row.authenticated === 'TRUE', // Convert to boolean
 			eventName: row.eventName || 'Unknown Event', // Default missing eventName
 			hasError: row.__has_error__ === 'TRUE', // Convert to boolean

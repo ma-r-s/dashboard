@@ -1,9 +1,9 @@
 milliseconds,authenticated,eventName,message,timestamp,__key__.namespace,__key__.app,__key__.path,__key__.kind,__key__.name,__key__.id,__error__,__has_error__
-,,,Home page loaded in 21584ms,4/11/2024 22:16:36,,s~ecobites-444,"""logs"", ""005KwZbAZ0T6xM4lPPG2""",logs,005KwZbAZ0T6xM4lPPG2,,,FALSE
-,,,Home page loaded in 30666ms,4/11/2024 21:56:14,,s~ecobites-444,"""logs"", ""0DZWXJbwTXX6Kpw3ifuS""",logs,0DZWXJbwTXX6Kpw3ifuS,,,FALSE
-,,,Home page loaded in 24017ms,4/11/2024 23:37:27,,s~ecobites-444,"""logs"", ""104NspLS2oo3M8GmNpZZ""",logs,104NspLS2oo3M8GmNpZZ,,,FALSE
-,,,Home page loaded in 2403079ms,5/11/2024 1:04:57,,s~ecobites-444,"""logs"", ""19nwgo1b2Z4s6HO6mbIT""",logs,19nwgo1b2Z4s6HO6mbIT,,,FALSE
-,,,Main page loaded in 2172ms (Unauthenticated),4/11/2024 21:14:17,,s~ecobites-444,"""logs"", ""1Ko8y2qvnQ0MBk09273Q""",logs,1Ko8y2qvnQ0MBk09273Q,,,FALSE
+,,,Home page loaded in 21584ms,18/11/2024 22:16:36,,s~ecobites-444,"""logs"", ""005KwZbAZ0T6xM4lPPG2""",logs,005KwZbAZ0T6xM4lPPG2,,,FALSE
+,,,Home page loaded in 30666ms,22/11/2024 21:56:14,,s~ecobites-444,"""logs"", ""0DZWXJbwTXX6Kpw3ifuS""",logs,0DZWXJbwTXX6Kpw3ifuS,,,FALSE
+,,,Home page loaded in 24017ms,22/11/2024 23:37:27,,s~ecobites-444,"""logs"", ""104NspLS2oo3M8GmNpZZ""",logs,104NspLS2oo3M8GmNpZZ,,,FALSE
+,,,Home page loaded in 2403079ms,22/11/2024 1:04:57,,s~ecobites-444,"""logs"", ""19nwgo1b2Z4s6HO6mbIT""",logs,19nwgo1b2Z4s6HO6mbIT,,,FALSE
+,,,Main page loaded in 2172ms (Unauthenticated),22/11/2024 21:14:17,,s~ecobites-444,"""logs"", ""1Ko8y2qvnQ0MBk09273Q""",logs,1Ko8y2qvnQ0MBk09273Q,,,FALSE
 ,,,Main page loaded in 2640ms (Unauthenticated),4/11/2024 21:08:51,,s~ecobites-444,"""logs"", ""1nF5uTZRtETTiT8EjpJ3""",logs,1nF5uTZRtETTiT8EjpJ3,,,FALSE
 ,,,Home page loaded in 949775ms,4/11/2024 20:06:06,,s~ecobites-444,"""logs"", ""2J667f57PLiVhebfvaIA""",logs,2J667f57PLiVhebfvaIA,,,FALSE
 ,,,Home page loaded in 154785ms,4/11/2024 23:51:18,,s~ecobites-444,"""logs"", ""2UDmNeKWe0BzguMXfgpV""",logs,2UDmNeKWe0BzguMXfgpV,,,FALSE
@@ -430,3 +430,40 @@ milliseconds,authenticated,eventName,message,timestamp,__key__.namespace,__key__
 4516,FALSE,splashScreenUnauthenticated,,2/11/2024 17:55:15,,s~ecobites-444,"""logs"", ""0p77IDBKZxdFzgySMuPO""",logs,0p77IDBKZxdFzgySMuPO,,,FALSE
 6507,FALSE,splashScreenUnauthenticated,,3/11/2024 3:18:33,,s~ecobites-444,"""logs"", ""MqE1aIkBEqi0E1pd13zV""",logs,MqE1aIkBEqi0E1pd13zV,,,FALSE
 6119,FALSE,splashScreenUnauthenticated,,4/11/2024 3:25:05,,s~ecobites-444,"""logs"", ""RBCgqHZGSo2s3Uo57yVd""",logs,RBCgqHZGSo2s3Uo57yVd,,,FALSE
+1205,FALSE,homePageLoaded,Home page loaded in 1205ms,6/11/2024 14:32:01,s~mockapp-999,"""logs"", ""abc123XYZ""",logs,abc123XYZ,,,FALSE
+3429,TRUE,homePageLoaded,Home page loaded in 3429ms,6/11/2024 14:37:12,s~mockapp-999,"""logs"", ""efg456UVW""",logs,efg456UVW,,,FALSE
+540,TRUE,splash_screen,Splash screen loaded,6/11/2024 14:45:03,s~mockapp-999,"""logs"", ""ijk789LMN""",logs,ijk789LMN,,,FALSE
+1728,FALSE,mainPageLoaded,Main page loaded in 1728ms,6/11/2024 14:47:56,s~mockapp-999,"""logs"", ""lmn123OPQ""",logs,lmn123OPQ,,,FALSE
+950,FALSE,splash_screen,Splash screen loaded in 950ms,6/11/2024 15:00:45,s~mockapp-999,"""logs"", ""rst456DEF""",logs,rst456DEF,,,FALSE
+2750,TRUE,homePageLoaded,Home page loaded in 2750ms,6/11/2024 15:12:34,s~mockapp-999,"""logs"", ""uvw789GHI""",logs,uvw789GHI,,,FALSE
+1863,FALSE,mainPageLoaded,Main page loaded in 1863ms,6/11/2024 15:25:18,s~mockapp-999,"""logs"", ""xyz123JKL""",logs,xyz123JKL,,,FALSE
+4327,TRUE,splash_screen,Splash screen loaded in 4327ms,6/11/2024 15:45:29,s~mockapp-999,"""logs"", ""mno456PQR""",logs,mno456PQR,,,FALSE
+1023,FALSE,homePageLoaded,Home page loaded in 1023ms,6/11/2024 15:48:07,s~mockapp-999,"""logs"", ""stu789ABC""",logs,stu789ABC,,,FALSE
+3125,TRUE,mainPageLoaded,Main page loaded in 3125ms,6/11/2024 15:50:49,s~mockapp-999,"""logs"", ""xyz456DEF""",logs,xyz456DEF,,,FALSE
+1705,FALSE,splash_screen,Splash screen loaded in 1705ms,6/11/2024 16:05:34,s~mockapp-999,"""logs"", ""klm123NOP""",logs,klm123NOP,,,FALSE
+2875,FALSE,mainPageLoaded,Main page loaded in 2875ms,6/11/2024 16:15:49,s~mockapp-999,"""logs"", ""opq789RST""",logs,opq789RST,,,FALSE
+1950,FALSE,homePageLoaded,Home page loaded in 1950ms,6/11/2024 16:30:02,s~mockapp-999,"""logs"", ""uvw123LMN""",logs,uvw123LMN,,,FALSE
+3540,TRUE,splash_screen,Splash screen loaded in 3540ms,6/11/2024 16:48:21,s~mockapp-999,"""logs"", ""ijk456XYZ""",logs,ijk456XYZ,,,FALSE
+2023,FALSE,homePageLoaded,Home page loaded in 2023ms,6/11/2024 17:05:38,s~mockapp-999,"""logs"", ""abc789UVW""",logs,abc789UVW,,,FALSE
+4418,FALSE,mainPageLoaded,Main page loaded in 4418ms,6/11/2024 17:15:42,s~mockapp-999,"""logs"", ""mno123DEF""",logs,mno123DEF,,,FALSE
+3159,FALSE,homePageLoaded,Home page loaded in 3159ms,6/11/2024 17:35:17,s~mockapp-999,"""logs"", ""stu456GHI""",logs,stu456GHI,,,FALSE
+1002,TRUE,splash_screen,Splash screen loaded in 1002ms,6/11/2024 18:00:13,s~mockapp-999,"""logs"", ""opq123NOP""",logs,opq123NOP,,,FALSE
+1872,FALSE,mainPageLoaded,Main page loaded in 1872ms,6/11/2024 18:15:09,s~mockapp-999,"""logs"", ""ijk789RST""",logs,ijk789RST,,,FALSE
+2204,FALSE,homePageLoaded,Home page loaded in 2204ms,6/11/2024 18:28:39,s~mockapp-999,"""logs"", ""xyz123LMN""",logs,xyz123LMN,,,FALSE
+732,TRUE,splash_screen,Splash screen loaded in 732ms,6/11/2024 23:45:00,s~mockapp-999,"""logs"", ""rst789ABC""",logs,rst789ABC,,,FALSE
+4257,FALSE,homePageLoaded,Home page loaded in 4257ms,7/11/2024 00:10:20,s~mockapp-999,"""logs"", ""abc123XYZ""",logs,abc123XYZ,,,FALSE
+3509,FALSE,mainPageLoaded,Main page loaded in 3509ms,7/11/2024 00:30:45,s~mockapp-999,"""logs"", ""uvw456DEF""",logs,uvw456DEF,,,FALSE
+2879,FALSE,homePageLoaded,Home page loaded in 2879ms,7/11/2024 00:45:00,s~mockapp-999,"""logs"", ""lmn789PQR""",logs,lmn789PQR,,,FALSE
+1204,TRUE,splash_screen,Splash screen loaded in 1204ms,1/12/2024 01:15:00,s~mockapp-999,"""logs"", ""stu123LMN""",logs,stu123LMN,,,FALSE
+3540,TRUE,splash_screen,Splash screen loaded in 3540ms,1/12/2024 16:48:21,s~mockapp-999,"""logs"", ""ijk456XYZ""",logs,ijk456XYZ,,,FALSE
+2023,FALSE,homePageLoaded,Home page loaded in 2023ms,1/12/2024 17:05:38,s~mockapp-999,"""logs"", ""abc789UVW""",logs,abc789UVW,,,FALSE
+4418,FALSE,mainPageLoaded,Main page loaded in 4418ms,2/12/2024 17:15:42,s~mockapp-999,"""logs"", ""mno123DEF""",logs,mno123DEF,,,FALSE
+3159,FALSE,homePageLoaded,Home page loaded in 3159ms,2/12/2024 17:35:17,s~mockapp-999,"""logs"", ""stu456GHI""",logs,stu456GHI,,,FALSE
+1002,TRUE,splash_screen,Splash screen loaded in 1002ms,2/12/2024 18:00:13,s~mockapp-999,"""logs"", ""opq123NOP""",logs,opq123NOP,,,FALSE
+1872,FALSE,mainPageLoaded,Main page loaded in 1872ms,6/11/2024 18:15:09,s~mockapp-999,"""logs"", ""ijk789RST""",logs,ijk789RST,,,FALSE
+2204,FALSE,homePageLoaded,Home page loaded in 2204ms,13/11/2024 18:28:39,s~mockapp-999,"""logs"", ""xyz123LMN""",logs,xyz123LMN,,,FALSE
+732,TRUE,splash_screen,Splash screen loaded in 732ms,13/11/2024 23:45:00,s~mockapp-999,"""logs"", ""rst789ABC""",logs,rst789ABC,,,FALSE
+4257,FALSE,homePageLoaded,Home page loaded in 4257ms,15/11/2024 00:10:20,s~mockapp-999,"""logs"", ""abc123XYZ""",logs,abc123XYZ,,,FALSE
+3509,FALSE,mainPageLoaded,Main page loaded in 3509ms,18/11/2024 00:30:45,s~mockapp-999,"""logs"", ""uvw456DEF""",logs,uvw456DEF,,,FALSE
+2879,FALSE,homePageLoaded,Home page loaded in 2879ms,18/11/2024 00:45:00,s~mockapp-999,"""logs"", ""lmn789PQR""",logs,lmn789PQR,,,FALSE
+1204,TRUE,splash_screen,Splash screen loaded in 1204ms,18/11/2024 01:15:00,s~mockapp-999,"""logs"", ""stu123LMN""",logs,stu123LMN,,,FALSE

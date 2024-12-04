@@ -74,6 +74,95 @@
 			value: count ? totalMilliseconds / count : 0
 		};
 	});
+
+	let orderAgainChartData = [
+		{ date: new Date('2024-11-01'), count: 0 },
+		{ date: new Date('2024-11-02'), count: 0 },
+		{ date: new Date('2024-11-03'), count: 2 },
+		{ date: new Date('2024-11-04'), count: 0 },
+		{ date: new Date('2024-11-05'), count: 0 },
+		{ date: new Date('2024-11-06'), count: 1 },
+		{ date: new Date('2024-11-07'), count: 0 },
+		{ date: new Date('2024-11-08'), count: 3 },
+		{ date: new Date('2024-11-09'), count: 0 },
+		{ date: new Date('2024-11-10'), count: 0 },
+		{ date: new Date('2024-11-11'), count: 5 },
+		{ date: new Date('2024-11-12'), count: 0 },
+		{ date: new Date('2024-11-13'), count: 2 },
+		{ date: new Date('2024-11-14'), count: 0 },
+		{ date: new Date('2024-11-15'), count: 0 },
+		{ date: new Date('2024-11-16'), count: 3 },
+		{ date: new Date('2024-11-17'), count: 0 },
+		{ date: new Date('2024-11-18'), count: 1 },
+		{ date: new Date('2024-11-19'), count: 0 },
+		{ date: new Date('2024-11-20'), count: 0 },
+		{ date: new Date('2024-11-21'), count: 0 },
+		{ date: new Date('2024-11-22'), count: 0 },
+		{ date: new Date('2024-11-23'), count: 2 },
+		{ date: new Date('2024-11-24'), count: 0 },
+		{ date: new Date('2024-11-25'), count: 0 },
+		{ date: new Date('2024-11-26'), count: 1 },
+		{ date: new Date('2024-11-27'), count: 0 },
+		{ date: new Date('2024-11-28'), count: 5 },
+		{ date: new Date('2024-11-29'), count: 0 },
+		{ date: new Date('2024-11-30'), count: 0 },
+		{ date: new Date('2024-12-01'), count: 0 },
+		{ date: new Date('2024-12-02'), count: 2 },
+		{ date: new Date('2024-12-03'), count: 0 }
+	];
+
+	let avgFeatureUsageChartData = [
+		{ eventName: 'search_restaurant', avgCount: 0.8 },
+		{ eventName: 'view_profile', avgCount: 0.5 },
+		{ eventName: 'filter_results', avgCount: 0.9 },
+		{ eventName: 'share_deal', avgCount: 0.4 }
+	];
+
+	let createOrderChartData = [
+		{ hour: 0, count: 5 },
+		{ hour: 1, count: 3 },
+		{ hour: 2, count: 2 },
+		{ hour: 3, count: 1 },
+		{ hour: 4, count: 0 },
+		{ hour: 5, count: 1 },
+		{ hour: 6, count: 4 },
+		{ hour: 7, count: 8 },
+		{ hour: 8, count: 12 },
+		{ hour: 9, count: 15 },
+		{ hour: 10, count: 20 },
+		{ hour: 11, count: 18 },
+		{ hour: 12, count: 22 },
+		{ hour: 13, count: 25 },
+		{ hour: 14, count: 19 },
+		{ hour: 15, count: 16 },
+		{ hour: 16, count: 18 },
+		{ hour: 17, count: 24 },
+		{ hour: 18, count: 30 },
+		{ hour: 19, count: 35 },
+		{ hour: 20, count: 40 },
+		{ hour: 21, count: 33 },
+		{ hour: 22, count: 25 },
+		{ hour: 23, count: 12 }
+	];
+
+	let averageRatingData = [
+		{ date: new Date('2024-11-01'), avgRating: 4.2 },
+		{ date: new Date('2024-11-05'), avgRating: 4.3 },
+		{ date: new Date('2024-11-10'), avgRating: 4.4 },
+		{ date: new Date('2024-11-15'), avgRating: 4.3 },
+		{ date: new Date('2024-11-20'), avgRating: 4.5 },
+		{ date: new Date('2024-11-25'), avgRating: 4.6 },
+		{ date: new Date('2024-11-30'), avgRating: 4.5 },
+		{ date: new Date('2024-12-03'), avgRating: 4.6 }
+	];
+
+	let ratingDistributionData = [
+		{ rating: 1, count: 1 },
+		{ rating: 2, count: 5 },
+		{ rating: 3, count: 8 },
+		{ rating: 4, count: 12 },
+		{ rating: 5, count: 3 }
+	];
 </script>
 
 <div class="space-y-6 p-6 px-20">
@@ -175,6 +264,86 @@
 				y="value"
 				series={[{ key: 'value', color: '#FF6F61' }]}
 			/>
+		</div>
+		<!-- Line Chart: Order Again Usage by Day -->
+		<div class="h-96 w-[600px] min-w-96 grow rounded-lg border px-10 pb-44">
+			<p class="py-4 text-sm font-bold">Order Again Usage by Day</p>
+			<LineChart
+				data={orderAgainChartData}
+				x="date"
+				y="count"
+				series={[{ key: 'count', color: '#81C784' }]}
+			/>
+			<p class="mt-2 text-sm text-gray-600">
+				This graph addresses the business question: <strong
+					>"How frequently do users use the 'Order Again' feature?"</strong
+				>
+				It provides insights into user engagement with this feature over time, helping identify patterns
+				and trends in repeat usage. High usage may indicate customer satisfaction and loyalty, while
+				low usage might suggest areas for improvement in the user experience or feature visibility.
+			</p>
+		</div>
+
+		<!-- Bar Chart: Features Used Less Than Once Per Week -->
+		<div class="h-96 w-[600px] min-w-96 grow rounded-lg border px-10 pb-44">
+			<p class="py-4 text-sm font-bold">Features Used Less Than Once Per Week</p>
+			<BarChart data={avgFeatureUsageChartData} x="eventName" y="avgCount" cRange={['#FF6F61']} />
+			<p class="mt-2 text-sm text-gray-600">
+				This graph answers the question: <strong
+					>"Which app features are used less than once per week by active users?"</strong
+				>
+				By identifying underused features, it helps prioritize improvements or decide whether certain
+				functionalities should be redesigned, promoted, or even deprecated. This data supports better
+				resource allocation and feature optimization.
+			</p>
+		</div>
+
+		<div class="h-96 w-[600px] min-w-96 grow rounded-lg border px-10 pb-32">
+			<p class="py-4 text-sm font-bold">Average Restaurant Rating Over Time</p>
+			<LineChart
+				data={averageRatingData}
+				x="date"
+				y="avgRating"
+				series={[{ key: 'avgRating', color: '#6EC6FF' }]}
+			/>
+			<p class="mt-2 text-sm text-gray-600">
+				This graph answers the question: <strong
+					>"How do restaurant ratings change over time?"</strong
+				>
+				It provides insights into trends in customer satisfaction, helping identify periods where ratings
+				improve or decline, and informs initiatives to maintain high-quality service.
+			</p>
+		</div>
+
+		<div class="h-96 w-[600px] min-w-96 grow rounded-lg border px-10 pb-32">
+			<p class="py-4 text-sm font-bold">Distribution of Restaurant Ratings</p>
+			<BarChart
+				data={ratingDistributionData}
+				x="rating"
+				y="count"
+				cRange={['#FF6F61', '#FFD54F', '#6EC6FF', '#81C784']}
+			/>
+			<p class="mt-2 text-sm text-gray-600">
+				This graph answers the question: <strong
+					>"What is the distribution of restaurant ratings?"</strong
+				>
+				It highlights the overall satisfaction level of customers, helping identify patterns such as
+				a high percentage of low ratings that may require attention.
+			</p>
+		</div>
+
+		<!-- Bar Chart: Order Frequency by Hour -->
+		<div class="h-96 min-w-96 grow rounded-lg border px-10 pb-32">
+			<p class="py-4 text-sm font-bold">Order Frequency by Hour</p>
+			<BarChart data={createOrderChartData} x="hour" y="count" cRange={['#FFD54F']} />
+			<p class="mt-2 text-sm text-gray-600">
+				This graph addresses the business question: <strong
+					>"At what times do users most frequently buy surplus food?"</strong
+				>
+				It helps identify peak order times, which can inform marketing campaigns, app notifications,
+				and partnerships with logistics companies. For example, peak times might indicate the need for
+				additional delivery resources during certain hours.
+			</p>
 		</div>
 	</div>
 	<footer class="mt-10 p-4 text-center text-gray-500">

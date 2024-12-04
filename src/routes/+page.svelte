@@ -157,11 +157,11 @@
 	];
 
 	let ratingDistributionData = [
-		{ rating: 1, count: 1 },
-		{ rating: 2, count: 5 },
+		{ rating: 1, count: 3 },
+		{ rating: 2, count: 2 },
 		{ rating: 3, count: 8 },
 		{ rating: 4, count: 12 },
-		{ rating: 5, count: 10 }
+		{ rating: 5, count: 15 }
 	];
 </script>
 

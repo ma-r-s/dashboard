@@ -161,7 +161,7 @@
 		{ rating: 2, count: 5 },
 		{ rating: 3, count: 8 },
 		{ rating: 4, count: 12 },
-		{ rating: 5, count: 3 }
+		{ rating: 5, count: 10 }
 	];
 </script>
 
